@@ -131,13 +131,13 @@
         </div>
         <div class="row justify-content-around mt-5">
           <div class="col-md-5">
-            <p class="fs-5">
+            <p id="teks-about1" class="fs-5">
               I live in Cipanas, Cianjur, West Java. I am the eldest of four siblings. My daily life is online lectures, doing assignments, and learning new things. In addition, I have a hobby of playing games, making designs, and hanging
               out with friends out there.
             </p>
           </div>
           <div class="col-md-5">
-            <p class="fs-5">
+            <p id="teks-about2" class="fs-5">
               I'm currently in semester 6. Since I was in college, I've learned new things such as programming, 2D design, 3D design, animation, understanding good teaching methods, organization, and many other things. I'm happy if I can be
               productive every day.
             </p>
@@ -156,7 +156,7 @@
         <div class="row mt-5 px-4 justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem">
-              <img src="img/1.png" class="card-img-top" alt="Si Tibo" />
+              <img src="img/1.png" class="card-img-top" alt="Mobile Design" />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Mobile Design</h5>
                 <p class="card-text">Design concept of a mobile app for order food or drink with simple User Interface.</p>
@@ -174,7 +174,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem">
-              <img src="img/3.png" class="card-img-top" alt="UI UX Design" />
+              <img src="img/3.png" class="card-img-top" alt="Web Design" />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Web Design</h5>
                 <p class="card-text">Experienced in making UI UX Design of several websites and sometimes it is implemented into a live website.</p>
@@ -240,6 +240,9 @@
           document.getElementById("avatar").width = "250";
           document.getElementById("teks-home").classList.toggle("text-center");
           document.getElementById("tombol-home").classList.toggle("justify-content-center");
+          document.getElementById("teks-about1").className = "fs-6";
+          document.getElementById("teks-about2").className = "fs-6";
+
           swapCols();
           swapped = true;
         } else if (width > 767 && swapped === true) {
@@ -247,6 +250,9 @@
           document.getElementById("avatar").width = "400";
           document.getElementById("teks-home").classList.toggle("text-center");
           document.getElementById("tombol-home").classList.toggle("justify-content-center");
+          document.getElementById("teks-about1").className = "fs-5";
+          document.getElementById("teks-about2").className = "fs-5";
+
           swapCols();
           swapped = false;
         }
