@@ -192,20 +192,28 @@
         <div class="row justify-content-md-center">
           <h2 class="fw-bold text-center">Contact</h2>
           <div class="col-md-6 mt-3">
-            <form>
+            <div class="alert alert-primary alert-dismissible fade show my-alert d-none" role="alert">
+              <strong>Terima Kasih!</strong> Pesan anda telah terkirim.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="gp-contact-form">
               <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" aria-describedby="nama" />
+                <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama" required />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="4"></textarea>
+                <textarea class="form-control" id="pesan" rows="4" name="pesan" required></textarea>
               </div>
-              <button type="submit" class="btn btn-kirim">Kirim</button>
+              <button type="submit" class="btn btn-kirim btn-before">Kirim</button>
+              <button class="btn btn-kirim btn-after d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -220,6 +228,30 @@
     <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzEk1b_70wUWtnU2llEBh96OtFzIxI-AH2gaLZf6gsklB4_TcoMO7t-niqrBm0krLbw/exec";
+      const form = document.forms["gp-contact-form"];
+      const btnBefore = document.querySelector(".btn-before");
+      const btnAfter = document.querySelector(".btn-after");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnAfter.classList.toggle("d-none");
+        btnBefore.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnAfter.classList.toggle("d-none");
+            btnBefore.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
     <script>
       var col1 = document.getElementById("sc1"),
         col2 = document.getElementById("c3"),
