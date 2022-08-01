@@ -24,7 +24,7 @@
       <div class="container fw-bold">
         <a class="navbar-brand" href="#">
           <img class="me-2" src="img/flat.png" alt="Flat Me" width="40" height="40" />
-          Awan's
+          Awanntama
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,6 +34,7 @@
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#tools">Tools</a>
             <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
@@ -47,7 +48,7 @@
         <div id="sc1" class="col-md mb-5 text-center d-none"></div>
         <div id="teks-home" class="col-md">
           <div class="row">
-            <p class="fs-5 fw-bold">Hello! My Name Is Awanntama</p>
+            <p class="fs-5 fw-bold">Hello! My Name Is</p>
           </div>
           <div class="row">
             <p class="fs-1 fw-name">Gunawan Pratama</p>
@@ -138,7 +139,7 @@
           </div>
           <div class="col-md-5">
             <p id="teks-about2" class="fs-5">
-              I'm currently in semester 6. Since I was in college, I've learned new things such as programming, 2D design, 3D design, animation, understanding good teaching methods, organization, and many other things. I'm happy if I can be
+              I'm currently in semester 8. Since I was in college, I've learned new things such as programming, 2D design, 3D design, animation, understanding good teaching methods, organization, and many other things. I'm happy if I can be
               productive every day.
             </p>
           </div>
@@ -155,7 +156,7 @@
         </div>
         <div class="row mt-5 px-4 justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem" type="button" data-bs-toggle="modal" data-bs-target="#modalMode">
               <img src="img/1.png" class="card-img-top" alt="Mobile Design" />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Mobile Design</h5>
@@ -164,20 +165,29 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem" type="button" data-bs-toggle="modal" data-bs-target="#modalVear">
               <img src="img/2.png" class="card-img-top" alt="Vector Art" />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Vector Art</h5>
-                <p class="card-text">Vector designs like this, usually made for the needs of friends' birthday gifts and the like.</p>
+                <p class="card-text">Vector designs like this, usually made for the needs of friends' birthday gifts and many more.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem" type="button" data-bs-toggle="modal" data-bs-target="#modalWede">
               <img src="img/3.png" class="card-img-top" alt="Web Design" />
               <div class="card-body">
                 <h5 class="card-title fw-bold">Web Design</h5>
                 <p class="card-text">Experienced in making UI UX Design of several websites and sometimes it is implemented into a live website.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem" type="button" data-bs-toggle="modal" data-bs-target="#modallathe">
+              <img src="img/mb.png" class="card-img-top" alt="3D Model Lathe" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">3D Model Lathe</h5>
+                <p class="card-text">Experienced in making lathe 3D design for student request to be used in Augmented Reality software.</p>
               </div>
             </div>
           </div>
@@ -186,6 +196,114 @@
     </section>
     <!-- End Projects -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalMode" tabindex="-1" aria-labelledby="ModalLabelMode" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="ModalLabelMode">Mobile Design</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="showcase.pdf#toolbar=0" height="450px" width="100%">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modalVear" tabindex="-1" aria-labelledby="ModalLabelMode" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="ModalLabelMode">Vector Art</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/vear.png" class="img-fluid" alt="Vector Art">
+            <br> <br>
+            <p class="text-center">For more, visit Instagram
+              <a href="https://www.instagram.com/awanntama/" style="text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-instagram cl-blue"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+                Awanntama
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalWede" tabindex="-1" aria-labelledby="ModalLabelMode" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="ModalLabelMode">Web Design</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/wede.png" class="img-fluid" alt="Web Design">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modallathe" tabindex="-1" aria-labelledby="ModalLabelMode" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="ModalLabelMode">3D Model Lathe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/mb.png" class="img-fluid" alt="3D Model Lathe">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <!-- Tools -->
+    <section id="tools">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="fw-bold">Tools</h2>
+        </div>
+        <div class="row justify-content-around mt-5">
+            <p class="fs-6 text-center">
+              The software used is ...
+            </p>
+            <div class="row justify-content-center mt-5">
+              <div class="col-1 mx-2">
+                <img src="img/tools/ai.png" width="60px" alt="Adobe Illustrator">
+              </div>
+              <div class="col-1 mx-2">
+                <img src="img/tools/ps.png" width="60px" alt="Adobe Photoshop">
+              </div>
+              <div class="col-1 mx-2">
+                <img src="img/tools/xd.png" width="60px" alt="Adobe XD">
+              </div>
+              <div class="col-1 mx-2">
+                <img src="img/tools/pr.png" width="60px" alt="Adobe Premiere Pro">
+              </div>
+              <div class="col-1 mx-2">
+                <img src="img/tools/corel.png" width="60px" alt="CorelDraw X7">
+              </div>
+              <div class="col-1 mx-2">
+                <img src="img/tools/figma.png" width="60px" alt="Figma">
+              </div>
+              <div class="col-1 mx-2">
+                <img src="img/tools/blender.png" width="60px" alt="Blender">
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tools -->
+    
     <!-- Contact -->
     <section id="contact">
       <div class="container mb-5">
